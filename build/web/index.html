@@ -1,0 +1,41 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <meta charset="UTF-8">  
+        <title>Bookstore</title>  
+    </head>  
+    <body>  
+
+        <h1>Add New Book Entry</h1>  
+        <form action="SaveServlet" method="post">  
+            <table>  
+                <tr><td>ID:</td><td><input type="text" name="ID"/></td></tr>
+                <tr><td>Title:</td><td><input type="text" name="Title"/></td></tr>  
+                <tr><td>Author</td><td><input type="text" name="Author"/></td></tr>  
+                <tr><td>Stock</td><td><input type="text" name="Stock"/></td></tr>  
+
+
+                <tr><td colspan="2"><input type="submit" value="Save Book Entry"/></td></tr>  
+            </table>  
+        </form>  
+        <form action="ViewServlet2" method="get">  
+            <table>  
+                <h2>Search books by id</h2>
+                <tr><td><input type="text" name="ID"/></td></tr>                                                       
+                <tr><td colspan="2"><input type="submit" value="Search Book Entry"/></td></tr>  
+            </table>  
+        </form> 
+        <form action="OrderServlet" method="get">  
+            <table>  
+                <h2>Order by id</h2>
+                <tr><td><input type="text" name="ID"/></td></tr> 
+                <tr><td><input type="text" name="Copies"/></td></tr> 
+                <tr><td colspan="2"><input type="submit" value="Order"/></td></tr>  
+            </table>  
+        </form> 
+
+        <br/>  
+        <a href="ViewServlet">View Books</a>  
+
+    </body>  
+</html>
